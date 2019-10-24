@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #333333;
+  --secondary-color: #444444;
+  --overlay: rgba(0, 0, 0, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-items {
+  list-style: none;
+}
+
+.nav-items a {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.nav-items a:hover {
+  color: #111;
+  transition: ease-out 10ms;
+}
+
+.container {
+  max-width: 1100px;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin: auto;
+}
+.navbar {
+  font-size: 1.2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.navbar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#logo {
+  font-size: 1.2rem;
+}
+
+.nav-items {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-items a {
+  padding: 0 1rem;
+}
+
+.showcase-1 {
+  margin-top: 50px;
+  position: relative;
+  background: url(./images/blur-codes-coding-577585.jpg) no-repeat bottom
+    center/cover;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--overlay);
+}
+
+.showcase-1-inner {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: #fff 2px solid;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: var(--primary-color) 2px solid;
+  transition: ease-in-out 1s;
+}
+
+.showcase-1-inner h2 {
+  font-size: 4rem;
+}
+
+.showcase-1-inner p {
+  font-size: 2rem;
+}
+
+.iframe {
+  margin-top: 50px;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  color: #451f1f;
+  text-align: center;
+}
+
+.hide-on-lg {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .showcase-1-inner h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5rem 2rem 0 2rem;
+  }
+
+  .showcase-1-inner p {
+    font-size: 1.2rem;
+  }
+  .showcase-1-inner .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  .hide-on-lg {
+    display: block;
+  }
+}
